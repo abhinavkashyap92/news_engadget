@@ -1,0 +1,50 @@
+	<!doctype html>
+<html>
+	<head>
+		<title>This is a rss feed parser</title>
+		<meta charset="utf-8">			
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+Double+Pica' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="logo-jquery.jpg" type="image/x-icon">
+	</head>
+	<body>
+
+			<div class="title">
+				<span id="title">YOUR TECH NEWS</span>
+			</div>
+		
+			<script type="text/javascript" src="jquery.js"></script>
+			<script type="text/javascript" src="handlebars.js"></script>
+			<script type="text/javascript" src="engadget.js"></script>
+							
+			
+
+					<div class="articles">
+						<script id="template" type="text/x-handlebars-template">
+							
+								{{#each this}}
+									<div class="eachArticle">
+										<h1>{{title}}</h1>
+										<p>{{{description}}}</p>
+									</div>
+								{{/each}}
+							
+										
+						</script>
+					</div>
+
+			<script type="text/javascript">
+			EngadgetFeeds.init({
+				template:$('#template').html(),
+				container:$('div.articles')
+			});	
+
+			</script>
+			
+
+		
+
+
+	</body>
+</html>

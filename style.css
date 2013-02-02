@@ -1,0 +1,64 @@
+body {
+	margin:0px;
+	padding:0px;
+	background: rgba(230,48,0,0.8);
+}
+
+#title{
+
+	top:85px;
+	left:36%;
+	font-family:'Croissant One', cursive;
+	font-size:40px;
+	font-weight:bold;
+	text-shadow:1px -4px #723601;
+	color:#e3e3e3;
+	position:absolute;
+}
+.articles {
+
+	width:60%;
+	background:rgba(255,255,255,1.0);
+	border-radius: 10px;
+	position:absolute;
+	margin-top:200px;
+	margin-left:20%;
+	margin-right:20%;
+	box-shadow: 2px -6px 10px #723601;
+}
+
+.eachArticle{
+
+	margin-left: 10px;
+	margin-right:10px;
+	background: rgba(205,197,197,0.75);
+	border-radius: 10px;
+	
+}
+
+h1{
+
+	color:#582A00;
+	font-family:'Croissant One', cursive;
+	
+
+}
+
+img{
+	width:500px;
+	height:400px;
+	margin: auto;
+}
+
+body p{
+
+	font-family: 'IM Fell Double Pica', serif;
+	color:#582A00;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+
